@@ -87,6 +87,21 @@ section{
     background-color: rgb(205, 90, 105);
 }
 
+.active{
+    display: block;
+    animation: scaleAnim 1s ease-in-out;
+
+    @keyframes scaleAnim {
+        0%{
+            transform: translateY(-100%) scaleY(0);
+        }
+
+        100%{
+            transform: translateY(0) scaleY(1);
+        }
+    }
+}
+
 // Controls
 .controls{
     position: fixed;
