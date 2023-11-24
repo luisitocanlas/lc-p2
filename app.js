@@ -4,7 +4,7 @@ const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelectorAll('.main-content');
 
 function PageTransitions(){
-    let currentActiveButton;
+    let currentActiveButton = document.querySelector('.control.active-btn');
 
     // Button click active class
     sectBtn.forEach(button => {
@@ -23,6 +23,9 @@ function PageTransitions(){
         const id = target.dataset.id;
 
         if (id && target.classList.contains('control')) {
+            // Remove selected from the other buttons
+            sectBtn.forEach(btn => btn.classList.remove('active'));
+
             // Hide other sections
             sections.forEach(section => section.classList.remove('active'));
 
