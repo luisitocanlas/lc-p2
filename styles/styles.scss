@@ -497,12 +497,23 @@ section{
 
     .portfolio-item{
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         img{
             width: 100%;
             height: 300px;
             object-fit: cover;
             border-radius: 15px;
+        }
+
+        .project-text{
+            p{
+                margin: 1rem 0;
+                line-height: 2rem;
+            }
         }
 
         .hover-items{
@@ -560,8 +571,21 @@ section{
                 }
             }
         }
+
+        .tech-con{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            i{
+                font-size: 2rem;
+            }
+        }
     }
 }
+
+
 
 .portfolio-item:hover .hover-items{
     opacity: 1;
