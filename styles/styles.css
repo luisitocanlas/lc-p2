@@ -462,6 +462,9 @@ section {
   margin: 1rem 0;
   line-height: 2rem;
 }
+.portfolios .portfolio-item .project-text span {
+  color: var(--color-secondary);
+}
 .portfolios .portfolio-item .hover-items {
   width: 100%;
   height: 100%;
@@ -887,5 +890,8 @@ section {
   }
   .portfolios {
     grid-template-columns: 1fr;
+  }
+  .contact-icon {
+    margin-bottom: 3.5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
