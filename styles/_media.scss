@@ -79,7 +79,8 @@
     }
 }
 
-@media screen and (max-width: 1070px){
+
+@media screen and (max-width: 1200px){
     .about-container{
         grid-template-columns: 1fr;
 
@@ -89,7 +90,7 @@
     }
 
     .portfolios{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .blogs{
